@@ -1,7 +1,7 @@
 package = "kong-header-based-upstream"
 version = "0.0.1-0"
 source = {
-  dir = "git://github.com/ipf-pl-godlewsm/kong-header-based-upstream"
+  url = "git://github.com/ipf-pl-godlewsm/kong-header-based-upstream2"
 }
 description = {
   summary = "https://github.com/ipf-pl-godlewsm/kong-header-based-upstream",

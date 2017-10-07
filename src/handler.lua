@@ -1,11 +1,11 @@
 local BasePlugin = require "kong.plugins.base_plugin"
-local access = require "kong.plugins.dynamic-upstream.access"
+local access = require "kong.plugins.header-based-upstream.access"
 local DynamicUpstreamHandler = BasePlugin:extend()
 
 DynamicUpstreamHandler.PRIORITY = 10
 
 function DynamicUpstreamHandler:new()
-	DynamicUpstreamHandler.super.new(self, "dynamic-upstream")
+	DynamicUpstreamHandler.super.new(self, "header-based-upstream")
 end
 
 function DynamicUpstreamHandler:access(conf)
